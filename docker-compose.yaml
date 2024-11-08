@@ -23,19 +23,6 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  email-service:
-    build: ./mail-notification-service
-    ports:
-      - "8081:8080"
-    depends_on:
-      - rabbitmq
-      - database
-    environment:
-      - RABBITMQ_HOST=rabbitmq
-      - RABBITMQ_PORT=5672
-      - RABBITMQ_USER=guest
-      - RABBITMQ_PASS=guest
-
 volumes:
   rabbitmq_data:
   postgres_data:
