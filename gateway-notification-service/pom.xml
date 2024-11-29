@@ -17,7 +17,7 @@
     <description>Service for handling gateway notifications</description>
 
     <properties>
-        <java.version>17</java.version> <!-- Corrected to use a valid Java version -->
+        <java.version>23</java.version> <!-- Corrected to use a valid Java version -->
         <spring-cloud.version>2023.0.3</spring-cloud.version>
     </properties>
 
